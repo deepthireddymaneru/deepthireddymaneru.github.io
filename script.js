@@ -1,1 +1,19 @@
-console.log("Being zero")
+var data1={image : "deep.jpg", name : "Maneru Deepthi" ,designation : "Software Engineer"};
+var data2={image : "deepthi.jpeg", name : "Deepthi" ,designation : "Software Developer"};
+var isdata1=true;
+var displaydata;
+var change_my_pick = function(){
+    if(isdata1)
+    {
+        displaydata=data2;
+        isdata1=false;
+    }
+    else
+    {
+        displaydata=data1;
+        isdata1=true;
+    }
+    document.getElementById("myimage").src= displaydata.image;
+    document.getElementById("myname").innerHTML=displaydata.name;
+    document.getElementById("mydesig").innerHTML=displaydata.designation;
+}
