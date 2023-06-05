@@ -2,7 +2,7 @@ var data1={image : "deep.jpg", name : "Maneru Deepthi" ,designation : "Software 
 var data2={image : "deepthi.jpeg", name : "Deepthi" ,designation : "Software Developer"};
 var isdata1=true;
 var displaydata;
-var change_my_pick = function(){
+var changemypic = function(){
     if(isdata1)
     {
         displaydata=data2;
